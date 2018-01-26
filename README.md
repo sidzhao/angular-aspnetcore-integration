@@ -1,1 +1,1 @@
-# angular-aspnetcore-integration
+# aspnetcore-angular-elastic-ui

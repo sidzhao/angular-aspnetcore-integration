@@ -6,13 +6,14 @@ import { RouterModule } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { AgmCoreModule } from '@agm/core';
-import { RouteHandlerModule, CoreModule } from '@daybreaksoft/angular-elastic-ui';
+import { RouteHandlerModule, CoreModule, DefaultLayoutService } from '@daybreaksoft/angular-elastic-ui';
 
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { reducers } from './app.reducers';
 import { AppRoutingModule } from './app-routing.module';
 import { PagesModule } from './pages/pages.module';
+import { AppLayoutService } from './app.layout.service';
 
 @NgModule({
     declarations: [
@@ -29,7 +30,10 @@ import { PagesModule } from './pages/pages.module';
         PagesModule,
         CoreModule,
         RouteHandlerModule
-    ]
+    ],
+providers: [
+        {provide: DefaultLayoutService, useClass: AppLayoutService }
+      ],
 })
 export class AppModuleShared {
 }

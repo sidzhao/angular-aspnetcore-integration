@@ -18,10 +18,28 @@ const nonTreeShakableModules = [
     'es6-promise',
     'es6-shim',
     'event-source-polyfill',
+    
+    // UI used
     'font-awesome/css/font-awesome.css',
     'hopscotch/dist/css/hopscotch.css',
     'highlight.js/styles/androidstudio.css',
-    'normalize.css/normalize.css'
+    'normalize.css/normalize.css',
+
+    'countup.js',
+    'reselect',
+    'smooth-scrollbar',
+    'lodash-es/find',
+    'lodash-es/each',
+    'lodash-es/filter',
+    'highlight.js',
+    'highlight.js/lib/languages/typescript.js',
+    'highlight.js/lib/languages/xml.js',
+
+    // Page used
+    'moment',
+    'angular-sortablejs',
+    'lodash-es/escape',
+    'lodash-es/sortBy'
 ];
 const allModules = treeShakableModules.concat(nonTreeShakableModules);
 

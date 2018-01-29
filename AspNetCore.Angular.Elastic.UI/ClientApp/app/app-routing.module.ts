@@ -21,26 +21,26 @@ const routes: Routes = [
        //  path: 'dashboard/crm',
        //  loadChildren: 'app/pages/dashboard/dashboard-crm/dashboard-crm.module#DashboardCrmModule'
        //},
-       //{
-       //  path: 'apps/chat',
-       //  loadChildren: 'app/pages/chat/chat.module#ChatModule'
-       //},
+       {
+        path: 'apps/chat',
+        loadChildren: './pages/chat/chat.module#ChatModule'
+       },
        //{
        //  path: 'components',
        //  loadChildren: 'app/pages/components/components.module#ComponentsModule'
        //},
-       //{
-       //  path: 'forms',
-       //  loadChildren: 'app/pages/forms/forms.module#FormModule'
-       //},
+       {
+         path: 'forms',
+         loadChildren: './pages/forms/forms.module#FormModule'
+       },
        // {
        //   path: 'apps/inbox',
        //   loadChildren: 'app/pages/inbox/inbox.module#InboxModule'
        // },
-       //{
-       //  path: 'pages/profile',
-       //  loadChildren: 'app/pages/profile/profile.module#ProfileModule'
-       //},
+       {
+         path: 'pages/profile',
+         loadChildren: './pages/profile/profile.module#ProfileModule'
+       },
        //{
        //  path: 'tables/simple-table',
        //  loadChildren: 'app/pages/tables/simple-table/simple-table.module#SimpleTableModule'
@@ -69,26 +69,26 @@ const routes: Routes = [
        //  path: 'maps/google-maps',
        //  loadChildren: 'app/pages/google-maps/google-maps.module#GoogleMapsModule'
        //},
-       //{
-       //  path: 'pages/projects',
-       //  loadChildren: 'app/pages/projects/projects.module#ProjectsModule'
-       //},
-       //{
-       //  path: 'pages/project-details',
-       //  loadChildren: 'app/pages/project-details/project-details.module#ProjectDetailsModule'
-       ////},
+       {
+         path: 'pages/projects',
+         loadChildren: './pages/projects/projects.module#ProjectsModule'
+       },
+       {
+         path: 'pages/project-details',
+         loadChildren: './pages/project-details/project-details.module#ProjectDetailsModule'
+       },
        {
          path: 'material-icons',
          loadChildren: './pages/icon/icon.module#IconModule'
        },
-       //{
-       //  path: 'editor',
-       //  loadChildren: 'app/pages/editor/editor.module#EditorModule'
-       //},
-       //{
-       //  path: 'drag-and-drop',
-       //  loadChildren: 'app/pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
-       //}
+       {
+         path: 'editor',
+         loadChildren: './pages/editor/editor.module#EditorModule'
+       },
+       {
+         path: 'drag-and-drop',
+         loadChildren: './pages/drag-and-drop/drag-and-drop.module#DragAndDropModule'
+       }
      ]
    },
   {

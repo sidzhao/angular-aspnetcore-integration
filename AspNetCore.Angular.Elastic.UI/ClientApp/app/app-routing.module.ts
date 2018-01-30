@@ -25,10 +25,10 @@ const routes: Routes = [
         path: 'apps/chat',
         loadChildren: './pages/chat/chat.module#ChatModule'
        },
-       //{
-       //  path: 'components',
-       //  loadChildren: 'app/pages/components/components.module#ComponentsModule'
-       //},
+       {
+        path: 'components',
+        loadChildren: './pages/components/components.module#ComponentsModule'
+       },
        {
          path: 'forms',
          loadChildren: './pages/forms/forms.module#FormModule'
@@ -41,26 +41,26 @@ const routes: Routes = [
          path: 'pages/profile',
          loadChildren: './pages/profile/profile.module#ProfileModule'
        },
-       //{
-       //  path: 'tables/simple-table',
-       //  loadChildren: 'app/pages/tables/simple-table/simple-table.module#SimpleTableModule'
-       //},
-       //{
-       //  path: 'tables/table-pagination',
-       //  loadChildren: 'app/pages/tables/table-pagination/table-pagination.module#TablePaginationModule'
-       //},
-       //{
-       //  path: 'tables/table-sorting',
-       //  loadChildren: 'app/pages/tables/table-sorting/table-sorting.module#TableSortingModule'
-       //},
-       //{
-       //  path: 'tables/table-filtering',
-       //  loadChildren: 'app/pages/tables/table-filtering/table-filtering.module#TableFilteringModule'
-       //},
-       //{
-       //  path: 'tables/datatable',
-       //  loadChildren: 'app/pages/tables/datatable/datatable.module#DatatableModule'
-       //},
+       {
+        path: 'tables/simple-table',
+        loadChildren: './pages/tables/simple-table/simple-table.module#SimpleTableModule'
+       },
+       {
+        path: 'tables/table-pagination',
+        loadChildren: './pages/tables/table-pagination/table-pagination.module#TablePaginationModule'
+       },
+       {
+        path: 'tables/table-sorting',
+        loadChildren: './pages/tables/table-sorting/table-sorting.module#TableSortingModule'
+       },
+       {
+        path: 'tables/table-filtering',
+        loadChildren: './pages/tables/table-filtering/table-filtering.module#TableFilteringModule'
+       },
+       {
+        path: 'tables/datatable',
+        loadChildren: './pages/tables/datatable/datatable.module#DatatableModule'
+       },
        //{
        //  path: 'tables/all-in-one-table',
        //  loadChildren: 'app/pages/tables/all-in-one-table/all-in-one-table.module#AllInOneTableModule'

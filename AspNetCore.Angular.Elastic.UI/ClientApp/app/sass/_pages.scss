@@ -8,7 +8,7 @@
 
 @import '../pages/drag-and-drop/drag-and-drop.component.scss';
 
-// @import '../pages/chat/chat.component.scss';
+ @import '../pages/chat/chat.component.scss';
 
 @import '../pages/forms/form-elements/form-elements.component.scss';
 @import '../pages/forms/form-wizard/form-wizard.component.scss';
@@ -17,3 +17,12 @@
 @import '../pages/profile/profile-overview/profile-overview.component.scss';
 @import '../pages/projects/projects.component.scss';
 @import '../pages/project-details/project-details.component.scss';
+
+@import '../pages/components/components.component.scss';
+@import '../pages/components/components-progress/components-progress.component.scss';
+
+@import '../pages/tables/datatable/datatable.component.scss';
+@import '../pages/tables/simple-table/simple-table.component.scss';
+@import '../pages/tables/table-filtering/table-filtering.component.scss';
+@import '../pages/tables/table-pagination/table-pagination.component.scss';
+@import '../pages/tables/table-sorting/table-sorting.component.scss';

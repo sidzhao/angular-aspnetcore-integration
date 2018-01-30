@@ -8,19 +8,19 @@ const routes: Routes = [
      path: '',
      component: LayoutComponent,
      children: [
-       //{
-       //  path: '',
-       //  loadChildren: 'app/pages/dashboard/dashboard-statistics/dashboard-statistics.module#DashboardStatisticsModule',
-       //  pathMatch: 'full'
-       //},
-       //{
-       //  path: 'dashboard/all-in-one',
-       //  loadChildren: 'app/pages/dashboard/dashboard.module#DashboardModule'
-       //},
-       //{
-       //  path: 'dashboard/crm',
-       //  loadChildren: 'app/pages/dashboard/dashboard-crm/dashboard-crm.module#DashboardCrmModule'
-       //},
+       {
+         path: '',
+         loadChildren: './pages/dashboard/dashboard-statistics/dashboard-statistics.module#DashboardStatisticsModule',
+         pathMatch: 'full'
+       },
+       {
+         path: 'dashboard/all-in-one',
+         loadChildren: './pages/dashboard/dashboard.module#DashboardModule'
+       },
+       {
+        path: 'dashboard/crm',
+        loadChildren: './pages/dashboard/dashboard-crm/dashboard-crm.module#DashboardCrmModule'
+       },
        {
         path: 'apps/chat',
         loadChildren: './pages/chat/chat.module#ChatModule'
@@ -61,14 +61,14 @@ const routes: Routes = [
         path: 'tables/datatable',
         loadChildren: './pages/tables/datatable/datatable.module#DatatableModule'
        },
-       //{
-       //  path: 'tables/all-in-one-table',
-       //  loadChildren: 'app/pages/tables/all-in-one-table/all-in-one-table.module#AllInOneTableModule'
-       //},
-       //{
-       //  path: 'maps/google-maps',
-       //  loadChildren: 'app/pages/google-maps/google-maps.module#GoogleMapsModule'
-       //},
+       {
+         path: 'tables/all-in-one-table',
+         loadChildren: './pages/tables/all-in-one-table/all-in-one-table.module#AllInOneTableModule'
+       },
+       {
+         path: 'maps/google-maps',
+         loadChildren: './pages/google-maps/google-maps.module#GoogleMapsModule'
+       },
        {
          path: 'pages/projects',
          loadChildren: './pages/projects/projects.module#ProjectsModule'

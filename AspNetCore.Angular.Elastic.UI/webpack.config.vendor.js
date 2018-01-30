@@ -12,7 +12,7 @@ const treeShakableModules = [
     '@angular/platform-browser',
     '@angular/platform-browser-dynamic',
     '@angular/router',
-    'zone.js',
+    'zone.js'
 ];
 const nonTreeShakableModules = [
     'es6-promise',
@@ -36,6 +36,8 @@ const nonTreeShakableModules = [
     'highlight.js/lib/languages/xml.js',
 
     // Page used
+    'chart.js',
+    'numeral',
     'moment',
     'angular-sortablejs',
     'lodash-es/escape',

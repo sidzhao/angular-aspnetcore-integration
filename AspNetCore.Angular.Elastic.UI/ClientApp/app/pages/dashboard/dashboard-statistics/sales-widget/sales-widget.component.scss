@@ -1,0 +1,34 @@
+vr-sales-widget {
+    .sales-widget {
+
+        .data {
+            @include responsivePadding();
+
+            .group {
+
+                .property {
+                }
+
+                .value {
+                    font-size: 22px;
+
+                    &.primary {
+                        color: mat-color($color-primary);
+                    }
+
+                    &.accent {
+                        color: mat-color($color-accent);
+                    }
+
+                    &.warn {
+                        color: mat-color($color-warn);
+                    }
+                }
+            }
+        }
+
+        .chart {
+            @include responsivePaddingHalf(top);
+        }
+    }
+}

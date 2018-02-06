@@ -344,7 +344,7 @@ export class AppLayoutService extends DefaultLayoutService {
 
     return [
       dashboard,
-      inbox,
+      // inbox,
       chat,
       forms,
       components,

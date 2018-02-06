@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { GoogleMapsComponent } from './google-maps.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: GoogleMapsComponent

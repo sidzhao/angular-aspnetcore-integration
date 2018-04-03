@@ -13,12 +13,11 @@ export default createServerRenderer(params => {
     const providers = [
         { provide: INITIAL_CONFIG, useValue: { document: '<app></app>', url: params.url } },
         { provide: APP_BASE_HREF, useValue: params.baseUrl },
-        { provide: 'BASE_URL', useValue: params.origin + params.baseUrl },
+        { provide: 'BASE_URL', useValue: params.origin + params.baseUrl }
     ];
 
     return platformDynamicServer(providers).bootstrapModule(AppModule).then(moduleRef => {
         const appRef: ApplicationRef = moduleRef.injector.get(ApplicationRef);
-        const state = moduleRef.injector.get(PlatformState);
         const zone: NgZone = moduleRef.injector.get(NgZone);
 
         return new Promise<RenderResult>((resolve, reject) => {
@@ -28,7 +27,17 @@ export default createServerRenderer(params => {
                 // completing the request in case there's an error to report
                 setImmediate(() => {
                     resolve({
-                        html: state.renderToString()
+                        html: `
+                                <div class="background">
+                                    <div class="wrapper">
+                                        <div class="ball-scale-multiple">
+                                            <div></div>
+                                            <div></div>
+                                            <div></div>
+                                        </div>
+                                        <div class="loading">LOADING</div>
+                                    </div>
+                                </div>`
                     });
                     moduleRef.destroy();
                 });

@@ -18,7 +18,7 @@ module.exports = (env) => {
     },
     module: {
       rules: [
-          { test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/, include: /ClientApp/, use: isDevBuild ? ['awesome-typescript-loader?silent=true', 'angular2-template-loader', 'angular-router-loader'] : ['@ngtools/webpack', 'angular-router-loader?aot=true'] },
+          { test: /\.ts$/, include: /ClientApp/, use: isDevBuild ? ['awesome-typescript-loader?silent=true', 'angular2-template-loader'] : '@ngtools/webpack' },
         { test: /\.html$/, use: 'html-loader?minimize=false' },
         { test: /\.css$/, use: ['to-string-loader', isDevBuild ? 'css-loader' : 'css-loader?minimize'] },
         { test: /\.(jpg|png|jpg|jpeg|gif|svg)$/, use: 'url-loader?limit=25000' },

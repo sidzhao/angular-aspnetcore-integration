@@ -6,10 +6,10 @@
     "test": "karma start ClientApp/test/karma.conf.js"
   },
   "dependencies": {
-    "@daybreaksoft/angular-elastic-ui": "^5.0.0-beta.2"
+    "@daybreaksoft/angular-elastic-ui": "^5.0.0-beta.4"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~5.1.0",
+    "@angular/compiler-cli": "~5.2.8",
     "@ngtools/webpack": "1.8.2",
     "@types/chart.js": "^2.7.6",
     "@types/lodash-es": "^4.17.0",

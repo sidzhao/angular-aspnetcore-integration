@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MediaReplayService } from '@daybreaksoft/angular-elastic-ui';
 
 @Component({
-  selector: 'vr-root',
+  selector: 'app',
   templateUrl: './app.component.html'
 })
 export class AppComponent {

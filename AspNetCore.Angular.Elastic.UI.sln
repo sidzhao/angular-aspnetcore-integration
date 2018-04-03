@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular.AspNetCore.Integration", "AspNetCore.Angular.Elastic.UI\Angular.AspNetCore.Integration.csproj", "{3B2CBF10-FE9B-4130-9023-B31D5856136D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Angular.Elastic.UI", "AspNetCore.Angular.Elastic.UI\AspNetCore.Angular.Elastic.UI.csproj", "{3B2CBF10-FE9B-4130-9023-B31D5856136D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
